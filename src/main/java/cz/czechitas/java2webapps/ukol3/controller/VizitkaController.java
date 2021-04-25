@@ -16,12 +16,13 @@ import java.util.List;
 public class VizitkaController {
   private final List<Vizitka> vizitky;
 
+
   public VizitkaController() {
     vizitky = List.of(
-            new Vizitka("Barbora Bühnová", "Czechitas z. s.","Václavské náměstí 837/11", "11000" , "Václavské náměstí 837/11, Praha 1, 1100", null,"+420 800123456", "www.czechitas.cz" ),
-            new Vizitka("Mirka Zatloukalová", "Czechitas z. s.","Václavské náměstí 837/11", "11000" , "Václavské náměstí 837/11, Praha 1, 1100", "mirka@czechitas.cs",null, "www.czechitas.cz" ),
-            new Vizitka("Monika Ptáčníková", "Czechitas z. s.","Evropská 677/150", "16000" , "Evropská 677/150, Praha 6, 16000", "monika@czechitas.cs","+420 800123456", "www.czechitas.cz" ),
-            new Vizitka("Dita (Přikrylová) Formánková", "Czechitas z. s.","Václavské náměstí 837/11", "11000" , "Václavské náměstí 837/11, Praha 1, 1100", "dita@czechitas.cs","+420 800123456", "www.czechitas.cz" )
+            new Vizitka("Barbora Bühnová", "Czechitas z. s.","Václavské náměstí 837/11", "11000" ,  null,"+420 800123456", "www.czechitas.cz" ),
+            new Vizitka("Mirka Zatloukalová", "Czechitas z. s.","Václavské náměstí 837/11", "11000" , "mirka@czechitas.cs",null, "www.czechitas.cz" ),
+            new Vizitka("Monika Ptáčníková", "Czechitas z. s.","Evropská 677/150", "16000" ,  "monika@czechitas.cs","+420 800123456", "www.czechitas.cz" ),
+            new Vizitka("Dita (Přikrylová) Formánková", "Czechitas z. s.","Václavské náměstí 837/11", "11000" , "dita@czechitas.cs","+420 800123456", "www.czechitas.cz" )
     );
   }
 
@@ -38,5 +39,8 @@ public class VizitkaController {
       modelAndView.addObject("vizitka", vizitky.get(id));
       return modelAndView;
     }
-  }
 
+
+
+
+  }
