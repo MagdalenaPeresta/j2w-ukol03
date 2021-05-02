@@ -33,7 +33,7 @@ public class VizitkaController {
     return modelAndView;
   }
 
-  @GetMapping("/detail")
+  @GetMapping(path = "/detail", params = "id")
   public ModelAndView detail(int id) {
       ModelAndView modelAndView = new ModelAndView("detail");
       modelAndView.addObject("vizitka", vizitky.get(id));
